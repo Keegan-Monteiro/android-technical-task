@@ -65,9 +65,9 @@ public class LoginActivity extends AppCompatActivity {
         btn_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                et_email.setText("androidtest@moneyboxapp.com");
-                et_password.setText("P455word12");
-                et_name.setText("Keegan");
+//                et_email.setText("androidtest@moneyboxapp.com");
+//                et_password.setText("P455word12");
+//                et_name.setText("Keegan");
 
                 if (allFieldsValid()) {
                     Toast.makeText(v.getContext(), R.string.input_valid, Toast.LENGTH_LONG).show();
