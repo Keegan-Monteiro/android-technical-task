@@ -20,6 +20,18 @@
             </intent-filter>
 
         </activity>
+
+        <activity
+            android:name=".UserAccountsActivity"
+            android:label="@string/user_accounts_title"
+            android:parentActivityName=".LoginActivity"/>
+
+        <activity
+            android:name=".IndividualAccountActivity"
+            android:label="@string/individual_account_title"
+            android:parentActivityName=".UserAccountsActivity"/>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

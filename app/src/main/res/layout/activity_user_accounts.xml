@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_accounts_title"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/hello_user_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        tools:text="Hello Monteiro!" />
+
+    <TextView
+        android:id="@+id/total_plan_value_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        tools:text="Total Plan Value: £1,000,000"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/accounts_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        />
+
+</LinearLayout>
