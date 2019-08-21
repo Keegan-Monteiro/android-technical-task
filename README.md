@@ -1,3 +1,21 @@
+# The Solution:
+
+## Part A:
+Bug 1 : Added constrainsts to view to make sure the appear in the right places
+Bug 2 : Added if statement to only validate name if it has been input
+Bug 3 : Added an animation listener to know when the first animation ends. When the first animation ends, set the min and max frames for the second animation and repeat it using Lottie
+
+## Part B:
+Firstly, to validate the login details via the MoneyBox API, I used the Volley library to easily make HTTP requests.
+I added 2 clases, one to generate the API request and other to handle the JSON response
+Once the details are authenticated, the BearerToken and the user name is stored in the preferences.
+This is does so that it can be accessed easily from any screen.
+Once the User Accounts activity has lodaded, it makes another API request to get the user accounts using Volley.
+The accounts are then displayed in an recycler viewer since there could be multiple accounts.
+When an recycler viewer item has been clicked, it passes the Account object to the individual account activity and displays its info.
+Volly then makes another API request to add money to the account when the button is clicked.
+
+
 # The Brief:
 
 Create a mini version of the Moneybox app that will allow existing users to login, check their account and add money to their moneybox.
